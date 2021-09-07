@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+      
+      
+    
+}
+form {border: 3px solid #f1f1f1;
+      border-radius: 10px 10px 10px 10px;}
+
+input[type=text], input[type=password] {
+  width: 55%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px 5px 5px 5px;
+  
+}
+
+button {
+  background-color: #000033;
+  color: white;
+  font-size: 17px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 5px 5px 5px 5px;
+}
+
+button a{
+text-decoration: none;
+font-size:18px;
+color:white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  margin-right: 750px;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.image {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.main{
+width: 70%;
+height: 70%;
+align-items:center;
+justify-content: center;
+position: absolute;
+margin-left: 220px;
+margin-top: 75px;
+display:block;
+}
+
+.glowing::before{
+content:'';
+position:absolute;
+left: -2px;
+top: -2px;
+background: linear-gradient(45deg,#e8f74d,#bd2681,#6512b9,#ff3300de,#5aabde);
+background-size: 400%;
+width: calc(100% + 5px);
+height: calc(100% + 5px);
+z-index: -1;
+animation: glower: 20s linear infinite;
+}
+
+@keyframes glower{
+0%{
+background-position: 0 0;}
+50%{
+background-position: 400%
+0}
+100%{
+background-position: 0 0;
+}
+}
+
+h1{font-family:calibri light;
+    font-size:50px;
+	margin-bottom:-20px;
+
+}
+
+
+</style>
+</head>
+<body align="center" style="background-image:linear-gradient(90deg,orange,red,indigo);">
+
+<h1>SALES AND PURCHASE MANAGEMENT SYSTEM</h1>
+<div class="main glowing">
+
+<form>
+  <div class="imgcontainer">
+    <img src="C:\ProgramData\Microsoft\User Account Pictures\guest.png" alt="user.img" class="image">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username    </b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+	<br>
+
+    <label for="psw"><b>Password    </b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required >
+        
+    <button type="submit"><a href="data.html">Login</a></button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#D3D3D3">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+</div>
+
+</body>
+</html>
